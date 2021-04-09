@@ -1,0 +1,280 @@
+/* ==================== NAVS ==================== */
+/* Top nav bar */
+
+body {
+    padding: 0px;
+}
+
+.topBar {
+    background-color: #8dbbf2;
+    align-items: center;
+    padding: 10px;
+}
+
+.topBar img, .topBar h4 {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topIcons {
+    width: 20px;
+}
+
+#infoButton {
+    margin-top: 7px;
+}
+
+/* bottom navbar */
+
+.mynavbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: #8dbbf2;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.mynavbar a {
+    color: #fefdff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.bottomIcons {
+    width: 25px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+/* For the logo on home page*/
+.pic-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  /*font-size:16px; */
+  color:#434343;
+  text-align: center;
+}
+
+.p33 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  /*font-size:16px; */
+  color:#434343;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.p4 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size:30px;
+  color:#434343;
+  text-align: center;
+}
+
+.p5 {
+  font-family: "Copperplate", "Papyrus", fantasy;
+  color:#434343;
+  text-align: center;
+}
+
+.p6 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size:25px;
+  color:#434343;
+  text-align: center;
+}
+
+.p7 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:#434343;
+  text-align: left;
+  font-size:15px;
+}
+
+.p8 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:#434343;
+  text-align: center;
+  font-size:15px;
+}
+
+.p9 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:#434343;
+  text-align: center;
+  font-size:15px;
+}
+
+.p10 {
+  font-family: "Brush Script M7", "Lucida Handwriting", cursive;
+  color:#434343;
+  text-align: right;
+  font-size:15px;
+}
+
+/* Index / home stuff */
+.containerIndex {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.contentBorder {
+    border-radius: 5px;
+    border: 2px solid #cee7f1;
+    background-color: #fbfbfb;
+    padding: 10px;
+    height: auto;
+}
+
+#searchEventBtn {
+    margin-top: 5%;
+    background-color: rgb(252,226,199);
+    color: #434343;
+}
+
+#avatar {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/* Results and Search pages */
+.sortFilter {
+    margin-top: 60px;
+    text-align:center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.go-btn {
+    background-color: #e8b8af;
+    border-color: #e8b8af;
+    color: #434343;
+}
+
+/* card stuff */
+
+.resultsCards {
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: rgb(247, 242, 240);
+    border-color: rgb(247, 242,240);
+    color: #434343;
+}
+
+.card-thumbnail {
+    padding: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 85px;
+    height: auto;
+}
+.card-description {
+    width: 45%;
+    font-size: small;
+}
+.card-button {
+    margin: auto;
+}
+
+/* images */
+#popcorn {
+    width: 100%;
+}
+
+.card-img {
+    width: 100%;
+}
+
+/* misc */
+.NoResultsBottom {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.card-text {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+/* ==================== end ==================== */
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  /* float: right; */
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+/* event */
+.eventImage{
+    /* background-color: #494949; */
+    /* padding: 0px; */
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 80%;
+    height: auto;
+}
+
+#profileContainer {
+    text-align: center;
+}
+
+.logoutBtn {
+    background: rgb(252,226,199);
+    color: #434343;
+}
+
+#getDataBtn {
+  background-color: rgb(252,226,199);
+  color: #434343;
+}
+
+.hidden {
+    display: none;
+}
+
+#profilepets {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.blankEventBtm {
+    margin-bottom: 80px;
+}
