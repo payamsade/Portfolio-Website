@@ -1,4 +1,30 @@
 
+/* ==================== HOME ==================== */
+
+h1{
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+
+h2{
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+
+img.allign-center {
+  display: block;
+  margin: auto;
+}
+
+img.allign-left {
+  float: left;
+  margin-right: 10px;
+}
+
+img.medium {
+  width: 30%;
+}
+
 /* ==================== GENERAL ==================== */
 
 
@@ -6,10 +32,6 @@
 margin-top: auto;
 margin-bottom: auto;
 /*font-size: .4cm;*/
-}
-
-.page{
-    /*background-color: rgb(56,56,56); */
 }
 
 .header{
@@ -321,7 +343,7 @@ body {
   content: "";
   clear: both;
   display: table;
-} 
+}
 
 /* event */
 .eventImage{
