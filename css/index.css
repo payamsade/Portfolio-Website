@@ -130,6 +130,7 @@ margin-bottom: auto;
 }
 
 
+
 /* ==================== NAVS ==================== */
 
 
@@ -151,14 +152,16 @@ margin-bottom: auto;
   text-align: center; /* If you want the text to be centered */
 }
 
-/* Add a background color on mouse-over */
-.navbar a:hover {
-  background-color: #000;
-}
 
 /* Style the current/active link */
 .navbar a.active {
-  background-color: #04AA6D;
+  background-color: #ffecbc;
+  color: black;
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
 }
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
