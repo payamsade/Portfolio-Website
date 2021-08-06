@@ -27,7 +27,6 @@ img.medium {
 
 /* ==================== GENERAL ==================== */
 
-
 #properText{
 margin-top: auto;
 margin-bottom: auto;
@@ -129,118 +128,6 @@ margin-bottom: auto;
   text-align: center;
 }
 
-
-
-/* ==================== NAVS ==================== */
-
-
-/* Style the navigation menu */
-.navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-/* Navigation links */
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
-}
-
-
-/* Style the current/active link */
-.navbar a.active {
-  background-color: #ffecbc;
-  color: black;
-}
-
-/* Add a background color on mouse-over */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #000;
-}
-
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
-  }
-}
-
-
-
-
-
-
-
-
-body {
-    padding: 0px;
-}
-
-.topBar {
-    background-color: #8dbbf2;
-    align-items: center;
-    padding: 10px;
-}
-
-.topBar img, .topBar h4 {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-.topIcons {
-    width: 20px;
-}
-
-#infoButton {
-    margin-top: 7px;
-}
-
-/* bottom navbar */
-
-.mynavbar {
-    text-align: center;
-    overflow: hidden;
-    background-color: #8dbbf2;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-.mynavbar a {
-    color: #fefdff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.bottomIcons {
-    width: 25px;
-}
-
-.container {
-    margin-top: 70px;
-}
-
-/* For the logo on home page*/
-.pic-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 .p1 {
   font-family: "Times New Roman", Times, serif;
 }
@@ -285,6 +172,111 @@ body {
   font-size:15px;
 }
 
+
+
+/* ==================== NAVS ==================== */
+
+
+/* Style the navigation menu */
+.navbar {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  text-align: center;
+
+}
+
+/* Navigation links */
+
+.navbar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  width: 25%;
+  margin-top: 15px;
+  padding: 12px;
+  margin-left: 25%;
+}
+
+.navbar ul li a {
+  margin: 15px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  text-align: center; /* If you want the text to be centered */
+}
+
+.navbar ul li a.active {
+  color: black;
+}
+
+
+/* Style the current/active link */
+.active, .navbar ul li a:hover {
+  background-color: #ffecbc;
+  color: black;
+  border-radius: 3px;
+}
+
+.sub-menu-Projects {
+  display: none;
+}
+
+.sub-menu-Projects ul li a{
+  color: black;
+}
+
+.navbar ul li:hover .sub-menu-Projects {
+  display: block;
+  position: absolute;
+  background-color: #ffecbc;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-bottom: 11px;
+  border-radius: 3px;
+}
+
+.navbar ul li:hover .sub-menu-Projects ul {
+  display: block;
+}
+
+.navbar ul li:hover .sub-menu-Projects ul li {
+  width: 140px;
+  padding: 1px;
+  border-bottom: 1px dotted black;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  margin-left: 0;
+}
+
+.navbar ul li:hover .sub-menu-Projects ul li:last-child {
+  border-bottom: none;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+body {
+    padding: 0px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
 /* Index / home stuff */
 .containerIndex {
     margin-left: 7%;
@@ -302,81 +294,6 @@ body {
     height: auto;
 }
 
-#searchEventBtn {
-    margin-top: 5%;
-    background-color: rgb(252,226,199);
-    color: #434343;
-}
-
-#avatar {
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-/* Results and Search pages */
-.sortFilter {
-    margin-top: 60px;
-    text-align:center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
-.go-btn {
-    background-color: #e8b8af;
-    border-color: #e8b8af;
-    color: #434343;
-}
-
-/* card stuff */
-
-.resultsCards {
-    margin-left: 5%;
-    margin-right: 5%;
-    overflow: scroll;
-}
-
-.card {
-    margin-top: 20px;
-    background-color: rgb(247, 242, 240);
-    border-color: rgb(247, 242,240);
-    color: #434343;
-}
-
-.card-thumbnail {
-    padding: 0px;
-    margin-left: 3%;
-    margin-right: 3%;
-    width: 85px;
-    height: auto;
-}
-.card-description {
-    width: 45%;
-    font-size: small;
-}
-.card-button {
-    margin: auto;
-}
-
-/* images */
-#popcorn {
-    width: 100%;
-}
-
-.card-img {
-    width: 100%;
-}
-
-/* misc */
-.NoResultsBottom {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-.card-text {
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
 /* ==================== end ==================== */
 
  /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -391,41 +308,4 @@ body {
   content: "";
   clear: both;
   display: table;
-}
-
-/* event */
-.eventImage{
-    /* background-color: #494949; */
-    /* padding: 0px; */
-    margin-left: 7%;
-    margin-right: 7%;
-    width: 80%;
-    height: auto;
-}
-
-#profileContainer {
-    text-align: center;
-}
-
-.logoutBtn {
-    background: rgb(252,226,199);
-    color: #434343;
-}
-
-#getDataBtn {
-  background-color: rgb(252,226,199);
-  color: #434343;
-}
-
-.hidden {
-    display: none;
-}
-
-#profilepets {
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.blankEventBtm {
-    margin-bottom: 80px;
 }
