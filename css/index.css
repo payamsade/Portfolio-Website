@@ -298,11 +298,12 @@ margin-bottom: auto;
 
 
 /* SPECIAL SUBMENU FOR WEPET & TREESKIRT*/
-
+/*
 .sub-menu-Projects .special{
   display: none;
   left: 472px; /* This is where the dropdown is relative to the page*/
-}
+/*}/*
+
 
 
 
