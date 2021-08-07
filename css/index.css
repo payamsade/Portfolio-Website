@@ -299,18 +299,18 @@ margin-bottom: auto;
 
 /* SPECIAL SUBMENU FOR WEPET & TREESKIRT*/
 
-.sub-menu-Projects-w {
+.sub-menu-w {
   display: none;
   left: 472px; /* This is where the dropdown is relative to the page*/
 }
 
-.sub-menu-Projects-w ul li a{
+.sub-menu-w ul li a{
   color: black;
   padding: 0;
   margin: 0;
 }
 
-.sub-menu-Projects-w ul li a:hover{
+.sub-menu-w ul li a:hover{
   color: blue;
   box-sizing: border-box;
   background-color: transparent;
@@ -319,7 +319,7 @@ margin-bottom: auto;
 }
 
 
-.navbar ul li:hover .sub-menu-Projects-w {
+.navbar ul li:hover .sub-menu-w {
   z-index: 1000;
   display: block;
   position: absolute;
@@ -336,13 +336,13 @@ margin-bottom: auto;
   border-radius: 3px;
 }
 
-.navbar ul li:hover .sub-menu-Projects-w ul {
+.navbar ul li:hover .sub-menu-w ul {
   display: block;
   padding: 0;
   margin: 0;
 }
 
-.navbar ul li:hover .sub-menu-Projects-w ul li {
+.navbar ul li:hover .sub-menu-w ul li {
   width: 93px;
   border-bottom: 1px solid black;
   background: transparent;
@@ -353,7 +353,7 @@ margin-bottom: auto;
   padding-bottom: 13px;
 }
 
-.navbar ul li:hover .sub-menu-Projects-w ul li:last-child {
+.navbar ul li:hover .sub-menu-w ul li:last-child {
   border-bottom: none;
 
 
