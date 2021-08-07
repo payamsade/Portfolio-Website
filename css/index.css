@@ -286,6 +286,10 @@ margin-bottom: auto;
   border-bottom: none;
 }
 
+
+/* ==================== MISC ==================== */
+
+
 body {
     padding: 0px;
 }
@@ -341,12 +345,13 @@ body {
 }
 
 
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 500px) {
+/* Add responsiveness - on screens less than 4500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 450px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
   }
+
 }
