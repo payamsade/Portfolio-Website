@@ -2,12 +2,17 @@
 /* ==================== HOME ==================== */
 
 h1{
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Open Sans", sans-serif, monospace;
   text-align: center;
 }
 
 h2{
   font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+
+h4{
+  font-family: "Open Sans", sans-serif, monospace;
   text-align: center;
 }
 
@@ -256,12 +261,13 @@ margin-bottom: auto;
   display: block;
   position: absolute;
   background-color: #ffecbc;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px; */
+  padding: 0;
 
   /*
   margin-right: 11px;
   padding-right: 10px;*/
-  margin-top:15px;
+  margin-top:13px;
 
   width: 93px;
   border-radius: 3px;
@@ -280,10 +286,14 @@ margin-bottom: auto;
   border-radius: 0;
   text-align: center;
   margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 13px;
 }
 
 .navbar ul li:hover .sub-menu-Projects ul li:last-child {
   border-bottom: none;
+
+
 }
 
 
