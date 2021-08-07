@@ -299,65 +299,11 @@ margin-bottom: auto;
 
 /* SPECIAL SUBMENU FOR WEPET & TREESKIRT*/
 
-.sub-menu-w {
+.sub-menu-Projects .special{
   display: none;
   left: 472px; /* This is where the dropdown is relative to the page*/
 }
 
-.sub-menu-w ul li a{
-  color: black;
-  padding: 0;
-  margin: 0;
-}
-
-.sub-menu-w ul li a:hover{
-  color: blue;
-  box-sizing: border-box;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-}
-
-
-.navbar ul li:hover .sub-menu-w {
-  z-index: 1000;
-  display: block;
-  position: absolute;
-  background-color: #ffecbc;
-  /*padding-bottom: 10px; */
-  padding: 0;
-
-  /*
-  margin-right: 11px;
-  padding-right: 10px;*/
-  margin-top:13px;
-
-  width: 93px;
-  border-radius: 3px;
-}
-
-.navbar ul li:hover .sub-menu-w ul {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar ul li:hover .sub-menu-w ul li {
-  width: 93px;
-  border-bottom: 1px solid black;
-  background: transparent;
-  border-radius: 0;
-  text-align: center;
-  margin-left: 0;
-  padding-top: 0;
-  padding-bottom: 13px;
-}
-
-.navbar ul li:hover .sub-menu-w ul li:last-child {
-  border-bottom: none;
-
-
-}
 
 
 /* ==================== MISC ==================== */
