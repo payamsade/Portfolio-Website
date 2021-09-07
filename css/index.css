@@ -32,6 +32,25 @@ img.medium {
 
 /* ==================== GENERAL ==================== */
 
+.payamBlock {
+
+  background-color: #ffecbc;
+
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.AboutMePic {
+  padding-top: 1%;
+}
+
+
 #properText{
 margin-top: auto;
 margin-bottom: auto;
@@ -76,6 +95,7 @@ margin-bottom: auto;
   /*font-size:16px; */
   color:black;
   text-align: left;
+  font-size:30px;
   margin-left: 5%;
   margin-right: 5%;
 
@@ -198,6 +218,7 @@ margin-bottom: auto;
   box-sizing: border-box;
   background-color: black;
   text-align: center;
+  display: flex;
 
 }
 
@@ -367,12 +388,73 @@ body {
 
 
 /* Add responsiveness - on screens less than 4500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 450px) {
-  .navbar a {
+@media screen and (max-device-width: 450px) {
+
+  .payamBlock {
+
+    margin: 0;
+    width: 102%; /* Temporary Fix */
+
+  }
+
+
+  .navbar {
     float: none;
     display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    width: 102%; /* Temporary Fix */
+    text-align: center; /* If you want the text to be left-aligned on small screens */
+  }
+
+  .navbar ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    /* Temporary Fix */
+    padding-left: 186%;
+
+
+    /*width: 25%;
+    margin-top: 15px;
+    padding: 12px;
+    margin-left: 25%; */
+  }
+
+  .navbar ul li a {
+    /*margin: 15px;
+    padding: 15px; */
+    text-decoration: none;
+    color: white;
+    font-size: 30px; /* 17 */
+    text-align: center; /* If you want the text to be centered */
+  }
+
+  .AboutMePic {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .p3 {
+    font-size:40px;
+  }
+
+  .p33 {
+
+    font-size:36px;
+
+
+  }
+  .p33about {
+    font-size: 36px;
+  }
+
+  .p6 {
+
+    font-size:40px;
+
   }
 
 }
