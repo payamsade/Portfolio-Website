@@ -208,46 +208,58 @@ margin-bottom: auto;
 
 
 /* Style the navigation menu */
-.navbar {
+.navigationbar {
+  
+  background-color: black;
+  
+  padding-top: 17px;
+  padding-bottom: 1px;
+  
+  /*
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
   text-align: center;
   display: flex;
+  */
 
 }
 
 /* Navigation links */
 
-.navbar ul {
-  display: inline-flex;
+.navigationbar ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.navbar ul li {
+/*
+.navbar li {
   width: 25%;
   margin-top: 15px;
   padding: 12px;
   margin-left: 25%;
 }
-
-.navbar ul li a {
+*/
+.navigationbar li a {
   margin: 15px;
   padding: 15px;
   text-decoration: none;
   color: white;
-  font-size: 17px; /* 17 */
+  font-size: 30px; /* 17 */
   text-align: center; /* If you want the text to be centered */
 }
 
-.navbar ul li a.active {
+.navigationbar li a.active {
   color: black;
 }
 
 
 /* Style the current/active link */
-.active, .navbar ul li a:hover {
+.active, .navigationbar li a:hover {
   background-color: #ffecbc;
   color: black;
   border-radius: 3px;
@@ -258,13 +270,13 @@ margin-bottom: auto;
   left: 472px; /* 431px */
 }
 
-.sub-menu-Projects ul li a{
+.sub-menu-Projects li a{
   color: black;
   padding: 0;
   margin: 0;
 }
 
-.sub-menu-Projects ul li a:hover{
+.sub-menu-Projects li a:hover{
   color: blue;
   box-sizing: border-box;
   background-color: transparent;
@@ -273,7 +285,7 @@ margin-bottom: auto;
 }
 
 
-.navbar ul li:hover .sub-menu-Projects {
+.navigationbar li:hover .sub-menu-Projects {
   z-index: 1000;
   display: block;
   position: absolute;
@@ -290,13 +302,13 @@ margin-bottom: auto;
   border-radius: 3px;
 }
 
-.navbar ul li:hover .sub-menu-Projects ul {
+.navigationbar li:hover .sub-menu-Projects ul {
   display: block;
   padding: 0;
   margin: 0;
 }
 
-.navbar ul li:hover .sub-menu-Projects ul li {
+.navigationbar li:hover .sub-menu-Projects ul li {
   width: 93px;
   border-bottom: 1px solid black;
   background: transparent;
@@ -307,7 +319,7 @@ margin-bottom: auto;
   padding-bottom: 13px;
 }
 
-.navbar ul li:hover .sub-menu-Projects ul li:last-child {
+.navigationbar li:hover .sub-menu-Projects ul li:last-child {
   border-bottom: none;
 
 
