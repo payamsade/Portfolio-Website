@@ -34,8 +34,8 @@ img.allign-left {
   margin-right: 10px;
 }
 
-img.medium {
-  width: 30%;
+img.small {
+  width: 22%;
 }
 
 /* ==================== GENERAL ==================== */
@@ -215,10 +215,10 @@ margin-bottom: auto;
 
 /* Style the navigation menu */
 .navigationbar {
-  
-  
+
+
   background-color: black;
-  
+
   padding-top: 17px;
   padding-bottom: 1px;
   /*
