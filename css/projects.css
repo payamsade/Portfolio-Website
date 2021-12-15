@@ -423,42 +423,6 @@ body {
     width: 102%;
   }
 
-  .navbar {
-    float: none;
-    display: block;
-    width: 115%;
-    text-align: center;
-
-  }
-
-  .navbar ul {
-    display: block;
-    list-style: none;
-    text-align: center;
-  }
-
-  .navbar ul li {
-    text-align: center;
-    /* Temporary Fix */
-    padding-left: 20%;
-
-
-    /*width: 25%;
-    margin-top: 15px;
-    padding: 12px;
-    margin-left: 25%; */
-  }
-
-  .navbar ul li a {
-    /*margin: 15px;
-    padding: 15px; */
-    text-decoration: none;
-    color: white;
-    font-size: 30px; /* 17 */
-    text-align: center; /* If you want the text to be centered */
-  }
-
-
   .row col{
     width: 115%;
     margin: 0;
