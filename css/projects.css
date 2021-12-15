@@ -97,6 +97,16 @@ margin-bottom: auto;
 
 }
 
+.p33back {
+  font-family: "Lucida Console", "Courier New", monospace;
+  /*font-size:16px; */
+  color:black;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
 .p4 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size:30px;
@@ -126,6 +136,16 @@ margin-bottom: auto;
 }
 
 .p33W {
+  font-family: "Lucida Console", "Courier New", monospace;
+  /*font-size:16px; */
+  color:whitesmoke;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.p33Wback {
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-size:16px; */
   color:whitesmoke;
@@ -209,12 +229,12 @@ margin-bottom: auto;
 
 /* Style the navigation menu */
 .navigationbar {
-  
+
   background-color: black;
-  
+
   padding-top: 17px;
   padding-bottom: 1px;
-  
+
   /*
   padding: 0;
   margin: 0;
@@ -400,7 +420,7 @@ body {
 
   .headBlock {
     margin: 0;
-    width: 115%;
+    width: 102%;
   }
 
   .navbar {
@@ -438,7 +458,6 @@ body {
     text-align: center; /* If you want the text to be centered */
   }
 
-  /* No Idea What To Do Here To Get The Divs Filled*/
 
   .row col{
     width: 115%;
@@ -457,6 +476,61 @@ body {
     padding: 0;
   }
 
-  /* No Idea What To Do Here To Get The Divs Filled*/
+  .p4 {
+    font-size: 30px;
+  }
+
+  .p4W{
+    font-size:40px;
+  }
+
+  .p44W{
+    font-size:36px;
+  }
+
+  .p3 {
+    font-size:30px;
+  }
+
+  .p3W {
+    font-size:30px;
+  }
+
+  .p33 {
+
+    font-size:26px;
+
+  }
+
+  .p33W {
+
+    font-size:26px;
+
+  }
+  .p33Wback {
+
+    font-size:40px;
+
+  }
+
+  .p33back {
+
+    font-size:40px;
+
+  }
+
+  .p33about {
+    font-size: 36px;
+  }
+
+  .p6 {
+
+    font-size:40px;
+
+  }
+
+  .myimages {
+
+  }
 
 }
