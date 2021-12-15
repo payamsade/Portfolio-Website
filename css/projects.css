@@ -423,6 +423,20 @@ body {
     width: 102%;
   }
 
+  .navigationbar li a.active {
+    color: black;
+    background-color: #ffecbc;
+    border-radius: 3px;
+  }
+
+
+  /* Style the current/active link */
+  .active, .navigationbar li a:hover {
+    color: unset;
+    background-color: unset;
+    border-radius: unset;
+  }
+
   .row col{
     width: 115%;
     margin: 0;

@@ -415,6 +415,20 @@ body {
 
   }
 
+  .navigationbar li a.active {
+    color: black;
+    background-color: #ffecbc;
+    border-radius: 3px;
+  }
+
+
+  /* Style the current/active link */
+  .active, .navigationbar li a:hover {
+    color: unset;
+    background-color: unset;
+    border-radius: unset;
+  }
+
   .AboutMePic {
     padding-top: 5%;
     padding-bottom: 5%;
