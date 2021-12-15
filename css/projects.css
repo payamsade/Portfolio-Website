@@ -432,7 +432,7 @@ body {
 
   /* Style the current/active link */
   .active, .navigationbar li a:hover {
-    color: unset;
+    color: white;
     background-color: unset;
     border-radius: unset;
   }
