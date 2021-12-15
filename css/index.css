@@ -38,6 +38,10 @@ img.small {
   width: 22%;
 }
 
+img.medium {
+  width: 35%;
+}
+
 /* ==================== GENERAL ==================== */
 
 .payamBlock {
