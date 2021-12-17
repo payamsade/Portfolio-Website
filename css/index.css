@@ -42,6 +42,10 @@ img.medium {
   width: 35%;
 }
 
+.skills {
+  margin-top: 5%;
+}
+
 /* ==================== GENERAL ==================== */
 
 .payamBlock {
@@ -384,6 +388,12 @@ body {
 
 .columnimg {
   flex: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.columnskillimg {
+  flex: 12.5%;
   padding: 10px;
   box-sizing: border-box;
 }
