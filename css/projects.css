@@ -1,23 +1,24 @@
-html,body{
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   overflow-x: hidden;
 }
 /* ==================== HOME ==================== */
 
-h1{
+h1 {
   font-family: "Open Sans", sans-serif, monospace;
   text-align: center;
 }
 
-h2{
+h2 {
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: center;
 }
 
-h4{
+h4 {
   font-family: "Open Sans", sans-serif, monospace;
   text-align: center;
 }
@@ -39,133 +40,128 @@ img.medium {
 /* ==================== GENERAL ==================== */
 
 .headBlock {
-
   background-color: #ffecbc;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
-
-
 }
 
-#properText{
-margin-top: auto;
-margin-bottom: auto;
-/*font-size: .4cm;*/
+#properText {
+  margin-top: auto;
+  margin-bottom: auto;
+  /*font-size: .4cm;*/
 }
 
-.header{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
+.header {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
 }
 
-.photoContent{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+.photoContent {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section{
-    padding: 5%;
+.section {
+  padding: 5%;
 }
 
 .subsection {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
-.lastsub{
-    padding-bottom: 5%;
+.lastsub {
+  padding-bottom: 5%;
 }
 
 /* fonts */
 .p3 {
   font-family: "Lucida Console", "Courier New", monospace;
-  /*font-size:16px; */
-  color:black;
+  color: black;
   text-align: center;
+  font-size: 30px;
 }
 
 .p33 {
   font-family: "Lucida Console", "Courier New", monospace;
-  /*font-size:16px; */
-  color:black;
+  color: black;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
-
+  font-size: 26px;
 }
 
 .p33back {
   font-family: "Lucida Console", "Courier New", monospace;
-  /*font-size:16px; */
-  color:black;
+  font-size: 40px;
+  color: black;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
-
 }
 
 .p4 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:30px;
-  color:black;
+  font-size: 30px;
+  color: black;
   text-align: center;
+  font-weight: bold;
 }
 
 .p4W {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:30px;
-  color:whitesmoke;
+  font-size: 40px;
+  color: whitesmoke;
   text-align: center;
+  font-weight: bold;
 }
 
 .p44W {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:30px;
-  color:whitesmoke;
+  font-size: 36px;
+  color: whitesmoke;
   text-align: left;
 }
 
 .p3W {
   font-family: "Lucida Console", "Courier New", monospace;
-  /*font-size:16px; */
-  color:whitesmoke;
+  font-size: 30px;
+  color: whitesmoke;
   text-align: center;
 }
 
 .p33W {
   font-family: "Lucida Console", "Courier New", monospace;
-  /*font-size:16px; */
-  color:whitesmoke;
+  font-size: 26px;
+  color: whitesmoke;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
-
 }
 
 .p33Wback {
   font-family: "Lucida Console", "Courier New", monospace;
-  /*font-size:16px; */
-  color:whitesmoke;
+  font-size: 40px;
+  color: whitesmoke;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
-
 }
 
 .p44 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:30px;
-  color:black;
+  font-size: 30px;
+  color: black;
   text-align: left;
 }
 
 .p45 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:30px;
-  color:black;
+  font-size: 30px;
+  color: black;
   text-align: center;
 }
 
@@ -177,59 +173,54 @@ margin-bottom: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .p6 {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:25px;
-  color:#434343;
+  font-size: 40px;
+  color: #434343;
   text-align: center;
 }
 
 .p7 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color:#434343;
+  color: #434343;
   text-align: left;
-  font-size:15px;
+  font-size: 15px;
 }
 
 .p8 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color:#434343;
+  color: #434343;
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
 }
 
 .p9 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color:#434343;
+  color: #434343;
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
 }
 
 .p10 {
   font-family: "Brush Script M7", "Lucida Handwriting", cursive;
-  color:#434343;
+  color: #434343;
   text-align: right;
-  font-size:15px;
+  font-size: 15px;
 }
 
 .p33about {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size:30px;
-  color:black;
+  font-size: 36px;
+  color: black;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-
-
 /* ==================== NAVS ==================== */
-
 
 /* Style the navigation menu */
 .navigationbar {
-
   background-color: black;
 
   padding-top: 17px;
@@ -242,7 +233,6 @@ margin-bottom: auto;
   text-align: center;
   display: flex;
   */
-
 }
 
 /* Navigation links */
@@ -277,9 +267,9 @@ margin-bottom: auto;
   color: black;
 }
 
-
 /* Style the current/active link */
-.active, .navigationbar li a:hover {
+.active,
+.navigationbar li a:hover {
   background-color: #ffecbc;
   color: black;
   border-radius: 3px;
@@ -290,20 +280,19 @@ margin-bottom: auto;
   left: 472px; /* 431px */
 }
 
-.sub-menu-Projects li a{
+.sub-menu-Projects li a {
   color: black;
   padding: 0;
   margin: 0;
 }
 
-.sub-menu-Projects li a:hover{
+.sub-menu-Projects li a:hover {
   color: blue;
   box-sizing: border-box;
   background-color: transparent;
   padding: 0;
   margin: 0;
 }
-
 
 .navigationbar li:hover .sub-menu-Projects {
   z-index: 1000;
@@ -316,7 +305,7 @@ margin-bottom: auto;
   /*
   margin-right: 11px;
   padding-right: 10px;*/
-  margin-top:13px;
+  margin-top: 13px;
 
   width: 93px;
   border-radius: 3px;
@@ -341,13 +330,9 @@ margin-bottom: auto;
 
 .navigationbar li:hover .sub-menu-Projects ul li:last-child {
   border-bottom: none;
-
-
 }
 
-
 /* SPECIAL SUBMENU FOR WEPET & TREESKIRT*/
-
 
 /* sub-menu-special {
   display: none;
@@ -355,34 +340,31 @@ margin-bottom: auto;
 }
 */
 
-
-
 /* ==================== MISC ==================== */
 
-
 body {
-    padding: 0px;
+  padding: 0px;
 }
 
 .container {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 /* Index / home stuff */
 .containerIndex {
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 70px;
-    margin-bottom: 80px;
-    text-align: center;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  text-align: center;
 }
 
 .contentBorder {
-    border-radius: 5px;
-    border: 2px solid #cee7f1;
-    background-color: #fbfbfb;
-    padding: 10px;
-    height: auto;
+  border-radius: 5px;
+  border: 2px solid #cee7f1;
+  background-color: #fbfbfb;
+  padding: 10px;
+  height: auto;
 }
 
 /* ==================== end ==================== */
@@ -398,14 +380,12 @@ body {
   box-sizing: border-box;
 }
 
-
- /* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   /* float: right; */
   width: 50%;
   padding: 5px;
 }
-
 
 /* Clear floats after image containers */
 .row::after {
@@ -414,10 +394,8 @@ body {
   display: table;
 }
 
-
 /* Add responsiveness - on screens less than 4500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-device-width: 450px) {
-
   .headBlock {
     margin: 0;
     width: 102%;
@@ -429,86 +407,28 @@ body {
     border-radius: 3px;
   }
 
-
   /* Style the current/active link */
-  .active, .navigationbar li a:hover {
+  .active,
+  .navigationbar li a:hover {
     color: white;
     background-color: unset;
     border-radius: unset;
   }
 
-  .row col{
+  .row col {
     width: 115%;
     margin: 0;
   }
 
-  .row section{
-    width: 115%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .row subsection{
+  .row section {
     width: 115%;
     margin: 0;
     padding: 0;
   }
 
-  .p4 {
-    font-size: 30px;
+  .row subsection {
+    width: 115%;
+    margin: 0;
+    padding: 0;
   }
-
-  .p4W{
-    font-size:40px;
-  }
-
-  .p44W{
-    font-size:36px;
-  }
-
-  .p3 {
-    font-size:30px;
-  }
-
-  .p3W {
-    font-size:30px;
-  }
-
-  .p33 {
-
-    font-size:26px;
-
-  }
-
-  .p33W {
-
-    font-size:26px;
-
-  }
-  .p33Wback {
-
-    font-size:40px;
-
-  }
-
-  .p33back {
-
-    font-size:40px;
-
-  }
-
-  .p33about {
-    font-size: 36px;
-  }
-
-  .p6 {
-
-    font-size:40px;
-
-  }
-
-  .myimages {
-
-  }
-
 }
