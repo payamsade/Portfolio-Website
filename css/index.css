@@ -96,6 +96,9 @@ img.medium {
   /*font-size:16px; */
   color: black;
   text-align: center;
+  font-size: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .p33 {
@@ -427,8 +430,12 @@ body {
     padding-bottom: 5%;
   }
 
+  .p33back {
+    margin-top: 50%;
+  }
+
   .p3 {
-    font-size: 40px;
+    font-size: 22px;
   }
 
   .p33 {
