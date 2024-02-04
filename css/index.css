@@ -108,6 +108,14 @@ img.medium {
   margin-right: 5%;
 }
 
+.p33back {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 40px;
+    color: black;
+    text-align: left;
+    margin-left: 1%;
+  }
+
 .p4 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 30px;

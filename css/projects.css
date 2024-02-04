@@ -99,8 +99,24 @@ img.medium {
   font-size: 40px;
   color: black;
   text-align: left;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1%;
+}
+
+.section_title {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.journeymap_title {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
 }
 
 .p4 {
