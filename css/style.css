@@ -164,7 +164,7 @@ nav {
 /* ===== HERO ===== */
 .hero {
   background: var(--nav-bg);
-  padding: 5rem 1.5rem 4.5rem;
+  padding: 3.5rem 1.5rem;
 }
 .hero-inner {
   max-width: var(--max-w);
@@ -240,7 +240,7 @@ nav {
 main {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 3.5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 /* ===== SECTION HEADER ===== */
@@ -262,7 +262,7 @@ main {
   background: var(--border);
 }
 
-.page-section { margin-bottom: 3.5rem; }
+.page-section { margin-bottom: 1.5rem; }
 
 /* ===== PROJECT CARDS ===== */
 .card-grid {
@@ -394,7 +394,7 @@ main {
 /* ===== FOOTER ===== */
 footer {
   border-top: 1px solid var(--border);
-  padding: 2rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   text-align: center;
   font-size: 0.875rem;
   color: var(--text-muted);
