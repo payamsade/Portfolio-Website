@@ -105,7 +105,15 @@ nav {
   transition: opacity 0.18s ease, visibility 0.18s ease, transform 0.18s ease;
   pointer-events: none;
 }
-.has-dropdown:hover .nav-dropdown {
+@media (hover: hover) {
+  .has-dropdown:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+}
+.has-dropdown.open .nav-dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
@@ -568,6 +576,29 @@ footer {
 
   .nav-links a { font-size: 0.8125rem; padding: 0.375rem 0.5rem; }
   .nav-brand { font-size: 0.875rem; }
+
+  /* Hide "Home" — brand link already goes there */
+  .nav-links li:first-child { display: none; }
+
+  /* Dropdown: fixed below nav, text-only, vertical */
+  .nav-dropdown,
+  .has-dropdown:hover .nav-dropdown {
+    position: fixed;
+    top: 56px;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    flex-direction: column;
+    gap: 0.375rem;
+    transform: translateY(-6px);
+  }
+  .has-dropdown.open .nav-dropdown {
+    transform: translateY(0);
+  }
+  .drop-card { flex: none; }
+  .drop-card img,
+  .drop-card-thumb { display: none; }
+  .drop-card-body { padding: 0.625rem 0.75rem; text-align: left; }
 }
 
 /* ===== SNAKE GAME ===== */

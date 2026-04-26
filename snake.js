@@ -54,6 +54,7 @@ function restartLoop() {
 function render() {
   const canvas = document.getElementById('snakeCanvas');
   const ctx = canvas.getContext('2d');
+  const cell = logicalSize / COLS;
 
   ctx.fillStyle = COLOR_BG;
   ctx.fillRect(0, 0, logicalSize, logicalSize);
@@ -61,10 +62,10 @@ function render() {
   ctx.fillStyle = COLOR_FOOD;
   ctx.beginPath();
   ctx.roundRect(
-    state.food.x * CELL + 2,
-    state.food.y * CELL + 2,
-    CELL - 4,
-    CELL - 4,
+    state.food.x * cell + 2,
+    state.food.y * cell + 2,
+    cell - 4,
+    cell - 4,
     4
   );
   ctx.fill();
@@ -74,10 +75,10 @@ function render() {
     ctx.globalAlpha = i === 0 ? 1 : Math.max(0.5, 1 - i * 0.02);
     ctx.beginPath();
     ctx.roundRect(
-      seg.x * CELL + 1,
-      seg.y * CELL + 1,
-      CELL - 2,
-      CELL - 2,
+      seg.x * cell + 1,
+      seg.y * cell + 1,
+      cell - 2,
+      cell - 2,
       3
     );
     ctx.fill();
