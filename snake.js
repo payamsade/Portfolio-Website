@@ -12,6 +12,7 @@ const COLOR_FOOD = '#d97706';
 
 let state = null;
 let loopTimer = null;
+let logicalSize = 400;
 
 function initState() {
   return {
@@ -55,7 +56,7 @@ function render() {
   const ctx = canvas.getContext('2d');
 
   ctx.fillStyle = COLOR_BG;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillRect(0, 0, logicalSize, logicalSize);
 
   ctx.fillStyle = COLOR_FOOD;
   ctx.beginPath();
@@ -85,20 +86,20 @@ function render() {
 
   if (state.status === 'gameover') {
     ctx.fillStyle = 'rgba(17,24,39,0.85)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillRect(0, 0, logicalSize, logicalSize);
 
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 1.5rem Inter, sans-serif';
+    ctx.font = 'bold 24px Inter, sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('GAME OVER', canvas.width / 2, canvas.height / 2 - 20);
+    ctx.fillText('GAME OVER', logicalSize / 2, logicalSize / 2 - 20);
 
     ctx.fillStyle = COLOR_FOOD;
-    ctx.font = '0.9rem Inter, sans-serif';
-    ctx.fillText(`Score: ${state.score}`, canvas.width / 2, canvas.height / 2 + 15);
+    ctx.font = '14px Inter, sans-serif';
+    ctx.fillText(`Score: ${state.score}`, logicalSize / 2, logicalSize / 2 + 15);
 
     ctx.fillStyle = 'rgba(255,255,255,0.5)';
-    ctx.font = '0.75rem Inter, sans-serif';
-    ctx.fillText('Press R or tap to restart', canvas.width / 2, canvas.height / 2 + 45);
+    ctx.font = '12px Inter, sans-serif';
+    ctx.fillText('Press R or tap to restart', logicalSize / 2, logicalSize / 2 + 45);
     ctx.textAlign = 'left';
   }
 }
@@ -237,9 +238,13 @@ function init() {
   canvas.addEventListener('touchstart', handleTouchStart, { passive: true });
   canvas.addEventListener('touchend', handleTouchEnd);
 
-  const size = Math.min(400, window.innerWidth - 32);
-  canvas.style.width = size + 'px';
-  canvas.style.height = size + 'px';
+  const dpr = window.devicePixelRatio || 1;
+  logicalSize = Math.min(400, window.innerWidth - 32);
+  canvas.style.width = logicalSize + 'px';
+  canvas.style.height = logicalSize + 'px';
+  canvas.width = logicalSize * dpr;
+  canvas.height = logicalSize * dpr;
+  canvas.getContext('2d').scale(dpr, dpr);
 }
 
 document.addEventListener('DOMContentLoaded', init);
