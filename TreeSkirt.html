@@ -1,312 +1,214 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tree Skirt — UCSD Sustain-A-Thon first place project by Payam Sadeghian.">
+  <title>Tree Skirt — Payam Sadeghian</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<html>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Payam's Portfolio" />
-  <meta
-    name="”viewport”"
-    content="”width"
-    ="device-width,"
-    initial-scale="1.0″"
-  />
-  <head>
-    <title>Sustain-A-Thon Project</title>
-    <link rel="icon" href="images/p.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-  </head>
-  <body>
-    <div class="headBlock">
-      <br />
-      <h1><b>Reducing Water Usage in Gardening</b></h1>
-      <br />
-    </div>
-
-    <!-- The navigation menu -->
-    <div class="navigationbar">
-      <ul>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Payam Sadeghian</a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-
-        <li>
-          <a class="active" href="index.html#projects">Projects</a>
+        <li class="has-dropdown">
+          <a href="#" class="active">Projects</a>
+          <div class="nav-dropdown">
+            <a href="WePet.html" class="drop-card">
+              <img src="images/WePet/WePetBanner.png" alt="WePet app design">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">UX &middot; Case Study</span>
+                <span class="drop-card-title">WePet — App Design</span>
+              </div>
+            </a>
+            <a href="https://github.com/payamsade/Portugal-Greatest-Distance" target="_blank" rel="noopener noreferrer" class="drop-card">
+              <img src="images/Portugal-Greatest-Distance/portugal-with-line.png" alt="Portugal Max Distance">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">Python &middot; Algorithm</span>
+                <span class="drop-card-title">Portugal Max Distance</span>
+              </div>
+            </a>
+            <a href="TreeSkirt.html" class="drop-card">
+              <img src="images/TreeSkirt/award.jpeg" alt="UCSD Sustain-A-Thon">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">Hardware &middot; Award</span>
+                <span class="drop-card-title">UCSD Sustain-A-Thon — 1st Place</span>
+              </div>
+            </a>
+          </div>
         </li>
-
-        <li>
-          <a href="Resume.pdf" target="_blank" rel="noopener noreferrer"
-            >Resume</a
-          >
-        </li>
+        <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </div>
+  </nav>
 
-    <div class="row section">
-      <div class="col">
-        <img
-          src="images/TreeSkirt/proto3.jpeg"
-          style="width: 100%; box-shadow: 2px 2px 2px 2px"
-        />
-      </div>
-      <div class="col" id="properText">
-        <p class="p4">Sustain-A-Thon first place: The Tree Skirt</p>
-        <p class="p3">
-          By limiting evaporation and creating more efficient watering methods
-          the Tree Skirt could save tremendous amounts of water in household
-          outdoor irrigation.
-        </p>
-      </div>
+  <header class="case-hero">
+    <div class="case-hero-inner">
+      <p class="case-hero-tag">Hardware &middot; Arduino &middot; Sustainability</p>
+      <h1>The Tree Skirt — Reducing Water Usage in Gardening</h1>
+      <p>A smart irrigation device that uses humidity sensing to eliminate over-watering. First place winner at the UCSD Sustain-A-Thon, judged by San Diego Water Authority members and UC San Diego professors.</p>
     </div>
+  </header>
 
-    <div id="Intro">
-      <div class="row section">
-        <div class="col">
-          <p class="p4">Background:</p>
-          <p class="p3">
-            The Tree Skirt was the result of a three-day engineering competition
-            at UC San Diego. The theme was sustainability. My two group partners
-            and I were able to pull through with a first place prize.
-          </p>
-        </div>
-      </div>
+  <div class="case-main">
 
-      <div class="row subsection">
-        <div class="col" id="properText">
-          <p class="p4">Data (1)</p>
-          <br />
-          <p class="p3" , style="padding-left: 5%">
-            The average California family uses about 190 gallons of water
-            outdoors per household per day.
-          </p>
-          <p class="p33"
-            style="padding-left: 5%; font-size: 16px">
-            *Source: California Single Family Use Efficiency Study
-          </p>
-        </div>
-        <div class="col">
-          <img
-            src="images/TreeSkirt/Irrigation.png"
-            style="width: 100%; padding-right: 10%"
-          />
-        </div>
-      </div>
-
-      <div class="row lastsub">
-        <div class="col">
-          <img
-            src="images/TreeSkirt/WaterExcess.png"
-            style="width: 100%; padding-left: 10%"
-          />
-        </div>
-        <div class="col" id="properText">
-        <p class="p4">Data (2)</p>
-          <p class="p3" , style="padding-right: 5%">
-            The average excess irrigation use for all single-family accounts is
-            estimated at 26.2 kgal per year.
-          </p>
-          <p
-            class="p33"
-            style="padding-right: 5%; font-size: 16px"
-          >
-            *Source: EPA WaterSense
-          </p>
-          <br />
-        </div>
-      </div>
-    </div>
-
-    <div id="Ideas">
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="p4">The problem:</p>
-          <br />
-          <p class="p3">
-            The price of water is projected to increase exponentially with the
-            inevitability of climate change. How can we help preserve water
-            usage?
-          </p>
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="p4">Our goal:</p>
-          <p class="p3" , style="padding-right: 5%">
-            Reduce household water usage by improving plant watering technology.
-          </p>
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="p4">Inspirations and concept:</p>
-          <p class="p3">
-            A pre-existing product, the <a href="https://www.treetpee.com/">Tree T-PEE</a> consists of a plastic cone that traps evaporation off
-            of tree roots. Agriculture research suggests the device can reduce
-            water usage in irrigation.
-          </p>
-        </div>
-        <div class="col">
-          <img
-            src="images/TreeSkirt/Inspiration.png"
-            style="width: 100%; box-shadow: 2px 2px 2px 2px"
-          />
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="col">
-          <img
-            src="images/TreeSkirt/Idea.png"
-            style="
-              display: block;
-              margin-top: 20%;
-              margin-left: auto;
-              margin-right: auto;
-              box-shadow: 2px 2px 2px 2px;
-              width: 100%;
-            "
-          />
-        </div>
-        <div class="col" id="properText">
-          <p class="p4">Our Idea:</p>
-          <p class="p3">
-            We aimed to create a Tree T-Pee for at-home use. Add an automatic
-            watering feature to prevent over-watering and more convenient to
-            use. Make it more attractive to be used at home and non-invasive to
-            one’s lifestyle.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div id="Construction">
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="p4">Logic:</p>
-          <p class="p3">
-            Our code was comprised of a simple algorithm. If the humidity
-            inside the tree skirt would be too low, it would water; else it
-            would stay off to preserve water flow.
-          </p>
-        </div>
-        <div class="col" id="properText">
-          <img
-            src="images/TreeSkirt/Code.png"
-            class="allign-center"
-            style="width: 60%"
-          />
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="p4">Features:</p>
-          <p class="p3">
-            We also intend to change the presetting for humidity level based on
-            the plant's requirements. The user would be able to select their
-            plant and the Tree Skirt will take care of the rest.
-          </p>
-        </div>
-        <div class="col" id="properText">
-          <img
-            src="images/TreeSkirt/Fruit.png"
-            style="width: 100%; box-shadow: 2px 2px 2px 2px"
-          />
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="col">
-          <img
-            src="images/TreeSkirt/Proto2.jpeg"
-            style="width: 80%; box-shadow: 2px 2px 2px 2px"
-          />
-        </div>
-        <div class="col" id="properText">
-          <p class="p4">Hardware Assembly:</p>
-          <p class="p3">
-            During the weekend we were able to scrap together this working
-            prototype which was able to stop our water flow as to our
-            requirements. For our demonstration, we would blow air under the
-            tree skirt and demonstrate the device stopping water flow.
-          </p>
-        </div>
-      </div>
-
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="p4">Final prototype:</p>
-          <p class="p3">
-            This is our final product. The Tree Skirt was able to stop its water
-            flow when we introduced humidity under the skirt; Thus proving our
-            concept of design. We were able to present it to the judges which
-            included San Diego Water Authority members and Professors at UC San
-            Diego. Our team won first place in the competition.
-          </p>
-          <!-- <p class="p3"> ANNOTATE THE DIAGRAM TO DEPICT EACH PART AND WHAT IT DOES </p> -->
-        </div>
-        <div class="col">
-          <img
-            src="images/TreeSkirt/Prototype.jpg"
-            style="width: 100%; box-shadow: 2px 2px 2px 2px"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="Conclusion">
-      <div class="row section">
-        <div class="col">
-          <img
-            src="images/TreeSkirt/Future.png"
-            style="width: 80%; box-shadow: 2px 2px 2px 2px"
-          />
-          <p
-            class="p33"
-            style="margin-left: 1%; margin-top: 1%; font-size: 16px"
-          >
-            *Ideas for the future of the Tree Skirt
-          </p>
-        </div>
-        <div class="col" id="properText">
-          <p class="p4">Areas of improvement:</p>
-          <p class="p3">
-            Moving forward we would implement humidity requirements for
-            different types of trees. It'd be as simple as the user selecting
-            what type of tree they have and the device taking care of the rest.
-            We'd include many sizes of tree skirts to expand the options to
-            bushes and shrubs. Working on an attractive appearance for the
-            device.
-          </p>
-        </div>
-      </div>
-    </div>
-    <a href="index.html">
-      <p class="p33back"><mark>&#8592; back to main </mark></p>
+    <a href="index.html" class="back-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to home
     </a>
-  </body>
+
+    <!-- Overview -->
+    <div class="case-section">
+      <p class="case-label">Overview</p>
+      <h2 class="case-h2">Smarter watering, less waste</h2>
+      <p class="case-p" style="max-width: 680px;">The Tree Skirt is a cone-shaped device that wraps around the base of a plant to trap evaporation and control water flow automatically based on the humidity inside. By limiting evaporation and only watering when needed, it dramatically reduces household outdoor water usage.</p>
+      <p class="case-p" style="max-width: 680px;">Built in three days during a sustainability engineering competition at UC San Diego with two teammates.</p>
+    </div>
+
+    <!-- Data / Problem -->
+    <div class="case-section">
+      <p class="case-section-title">The Problem</p>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Data Point 1</p>
+          <h2 class="case-h2">190 gallons per household, per day</h2>
+          <p class="case-p">The average California family uses about 190 gallons of water outdoors per household per day — the vast majority on landscaping and irrigation.</p>
+          <p class="case-source">Source: California Single Family Water Use Efficiency Study</p>
+        </div>
+        <div>
+          <img src="images/TreeSkirt/Irrigation.png" alt="Irrigation water usage chart" class="case-img">
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <img src="images/TreeSkirt/WaterExcess.png" alt="Excess water usage data" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">Data Point 2</p>
+          <h2 class="case-h2">26,200 gallons wasted per year</h2>
+          <p class="case-p">The average excess irrigation use for single-family accounts is estimated at 26.2 kgal per year — water that could be saved with smarter technology.</p>
+          <p class="case-source">Source: EPA WaterSense</p>
+        </div>
+      </div>
+
+      <div class="case-section" style="margin-bottom: 0;">
+        <p class="case-label">The Challenge</p>
+        <h2 class="case-h2">Water costs will only rise</h2>
+        <p class="case-p">The price of water is projected to increase exponentially as climate change intensifies. The question driving our project: <em>How can we preserve water usage at the household level with low-cost, accessible technology?</em></p>
+      </div>
+    </div>
+
+    <!-- Concept & Inspiration -->
+    <div class="case-section">
+      <p class="case-section-title">Concept &amp; Design</p>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Inspiration</p>
+          <h2 class="case-h2">The Tree T-PEE</h2>
+          <p class="case-p">An existing agricultural product — the Tree T-PEE — is a plastic cone placed over tree roots to trap evaporation and reduce water loss. Research suggests it can significantly lower water consumption in commercial irrigation. We wanted to bring this concept to everyday home use.</p>
+        </div>
+        <div>
+          <img src="images/TreeSkirt/Inspiration.png" alt="Tree T-PEE inspiration product" class="case-img">
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <img src="images/TreeSkirt/Idea.png" alt="Tree Skirt concept sketch" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">Our Idea</p>
+          <h2 class="case-h2">A smarter cone for the home</h2>
+          <p class="case-p">We reimagined the Tree T-PEE for residential use: add automatic watering controlled by a humidity sensor to prevent over-watering, and design it to be attractive enough to sit in a home garden without being an eyesore.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Construction -->
+    <div class="case-section">
+      <p class="case-section-title">Engineering &amp; Construction</p>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Logic</p>
+          <h2 class="case-h2">Simple but effective algorithm</h2>
+          <p class="case-p">The device's code runs a simple conditional: if the humidity inside the skirt drops below a set threshold, the water valve opens; otherwise, it stays closed. This prevents over-watering entirely.</p>
+        </div>
+        <div>
+          <img src="images/TreeSkirt/Code.png" alt="Arduino code for the Tree Skirt" class="case-img">
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <img src="images/TreeSkirt/Fruit.png" alt="Plant type selection feature" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">Features</p>
+          <h2 class="case-h2">Plant-aware humidity targets</h2>
+          <p class="case-p">The device is designed so humidity thresholds can be customized per plant type. A user would select their plant species and the Tree Skirt would handle the rest — no knowledge of irrigation required.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Hardware Assembly</p>
+          <h2 class="case-h2">Built in a weekend</h2>
+          <p class="case-p">Using components sourced during the three-day competition, we assembled a working prototype capable of stopping water flow on command. For our judges' demonstration, we blew air under the skirt to raise the humidity and showed the device cutting off water flow in real time.</p>
+        </div>
+        <div>
+          <img src="images/TreeSkirt/Proto2.jpeg" alt="Hardware assembly of the Tree Skirt prototype" class="case-img">
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <img src="images/TreeSkirt/Prototype.jpg" alt="Final Tree Skirt prototype" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">Final Prototype</p>
+          <h2 class="case-h2">First place</h2>
+          <p class="case-p">The final Tree Skirt successfully stopped water flow when humidity rose inside the cone, proving our concept. We presented to a judging panel that included San Diego Water Authority members and UCSD professors — and took first place in the competition.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future -->
+    <div class="case-section">
+      <p class="case-section-title">Looking Forward</p>
+
+      <div class="two-col">
+        <div>
+          <img src="images/TreeSkirt/Future.png" alt="Future ideas for the Tree Skirt" class="case-img">
+          <p class="case-source">Ideas for the future of the Tree Skirt</p>
+        </div>
+        <div>
+          <p class="case-label">Areas of Improvement</p>
+          <h2 class="case-h2">Next steps for the Tree Skirt</h2>
+          <p class="case-p">Moving forward, we would map specific humidity targets to different plant and tree species, making setup as simple as selecting your plant from a list. We would also offer multiple size variants to cover shrubs and bushes, and invest in a more polished appearance suitable for residential gardens.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Payam Sadeghian &mdash; Houston, TX</p>
+  </footer>
+
+</body>
 </html>

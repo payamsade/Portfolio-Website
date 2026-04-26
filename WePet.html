@@ -1,372 +1,216 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WePet — App design case study by Payam Sadeghian.">
+  <title>WePet Case Study — Payam Sadeghian</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<html>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Payam's Portfolio" />
-  <meta
-    name="”viewport”"
-    content="”width"
-    ="device-width,"
-    initial-scale="1.0″"
-  />
-  <head>
-    <title>We Pet case study</title>
-    <link rel="icon" href="images/p.png" />
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Payam Sadeghian</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="active">Projects</a>
+          <div class="nav-dropdown">
+            <a href="WePet.html" class="drop-card">
+              <img src="images/WePet/WePetBanner.png" alt="WePet app design">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">UX &middot; Case Study</span>
+                <span class="drop-card-title">WePet — App Design</span>
+              </div>
+            </a>
+            <a href="https://github.com/payamsade/Portugal-Greatest-Distance" target="_blank" rel="noopener noreferrer" class="drop-card">
+              <img src="images/Portugal-Greatest-Distance/portugal-with-line.png" alt="Portugal Max Distance">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">Python &middot; Algorithm</span>
+                <span class="drop-card-title">Portugal Max Distance</span>
+              </div>
+            </a>
+            <a href="TreeSkirt.html" class="drop-card">
+              <img src="images/TreeSkirt/award.jpeg" alt="UCSD Sustain-A-Thon">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">Hardware &middot; Award</span>
+                <span class="drop-card-title">UCSD Sustain-A-Thon — 1st Place</span>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+  <header class="case-hero">
+    <div class="case-hero-inner">
+      <p class="case-hero-tag">UX &middot; Case Study &middot; Mobile App</p>
+      <h1>WePet — Find pet-minded people</h1>
+      <p>A mobile social media app designed to connect pets and people. WePet lets users discover and share pet events like adoptions and meetups, follow other users, and message within the community.</p>
+    </div>
+  </header>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+  <div class="case-main">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+    <a href="index.html" class="back-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to home
+    </a>
 
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-  </head>
-
-  <body>
-    <div class="page">
-      <!-- Intro -->
-      <div class="headBlock" ;>
-        <h1><b>App design case study</b></h1>
+    <!-- Overview -->
+    <div class="two-col case-section">
+      <div>
+        <p class="case-label">Overview</p>
+        <h2 class="case-h2">Connect pets and people</h2>
+        <p class="case-p">WePet is a social platform built for pet owners who want to find a community. Users can share and browse events like adoptions and pet meetups, connect with like-minded people, and swap photos of their animals.</p>
+        <p class="case-p">The app was developed over 6 weeks for an Interaction and Design course at UC San Diego.</p>
+        <p class="case-p"><strong>My roles:</strong> Wireframing, prototyping, HTML &amp; CSS, aesthetics &amp; formatting, messaging functionality in JavaScript.</p>
       </div>
-
-      <!-- The navigation menu -->
-      <div class="navigationbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li>
-            <a class="active" href="index.html#projects">Projects</a>
-          </li>
-
-          <li>
-            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer"
-              >Resume</a
-            >
-          </li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-
-      <div class="row section">
-        <div class="col" id="properText">
-          <p class="journeymap_title">Find pet-minded people!</p>
-          <p class="p33">
-            WePet is a mobile social media app designed to connect pets and
-            people. WePet allows the user to share and discover pet events like
-            adoptions, meetups, and more! Connect with and message users, and
-            share pics of pets.
-          </p>
-        </div>
-        <div class="col-8">
-          <img
-            class="myimages"
-            src="images/WePet/WePet.png"
-            style="width: 100%; box-shadow: 2px 2px 2px 2px"
-          />
-        </div>
-      </div>
-
-      <!-- About
-        - The Problem
-            "In this day and age most people rely on apps to connect to people, how can we help pet owners find others to build a community with. Some may find it difficult and inconvinient to find a social group as pet owners and build a community for their pets."
-            - My roles, responsibilities, and tools in this project-->
-
-      <div id="About">
-        <div class="row section">
-          <div class="col">
-            <p class="section_title">Background</p>
-            <p class="p33">
-              Our team collaborated to develop this app in 6 weeks for a
-              Interaction and Design course at UC San Diego.
-            </p>
-          </div>
-        </div>
-        <div class="row subsection">
-          <div class="col" id="properText">
-            <p class="journeymap_title">The Problem:</p>
-            <p class="p33">
-              Some may find it overwhelming and inconvenient to build social
-              groups as pet owners on conventional social apps like Facebook.
-              How can we help pet owners find others to build a community with?
-            </p>
-          </div>
-        </div>
-        <div class="row subsection">
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/RND/Competitive.png"
-              style="width: 100%; padding-left: 10%"
-            />
-          </div>
-          <div class="col" id="properText">
-            <p class="journeymap_title">Competitive Analysis:</p>
-            <p class="p33" , style="padding-right: 5%">
-              An analysis of other products that may offer a similar experience
-              to see what to build on and what gaps to fill in.
-            </p>
-          </div>
-        </div>
-        <div class="row lastsub">
-          <div class="col" id="properText">
-            <p class="journeymap_title">My roles, and tools in this project:</p>
-            <p class="p33">
-              Wireframing, Prototyping, HTML & CSS, Aesthetics and Formatting,
-              Messaging functionality in JavaScipt.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Turning ideas into models
-        - Storyboarding
-        - Prototyping
-        - User Testing
-        - Wire-framing-->
-
-      <div id="ideas1">
-        <div class="row section">
-          <div class="col">
-            <p class="section_title">Turning Ideas into Models</p>
-          </div>
-        </div>
-
-        <!--Storyboarding-->
-        <div class="row subsection">
-          <div class="col" id="properText">
-            <p class="journeymap_title">Storyboarding:</p>
-            <p class="p33" , style="padding-left: 5%">
-              We began crafting storyboards to depict our target audience and
-              how the app would be used to satisfy user needs. We began creating
-              paper prototypes from our storyboards to begin user testing and
-              building off feedback.
-            </p>
-          </div>
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/Prototypes/storyA.png"
-              style="width: 100%; padding-right: 10%"
-            />
-          </div>
-        </div>
-
-        <!--Prototyping-->
-        <div class="row subsection">
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/Prototypes/home.png"
-              style="width: 90%; padding-left: 10%; padding-bottom: 5%"
-            />
-            <img
-              class="myimages"
-              src="images/WePet/RND/questions.png"
-              style="width: 90%; padding-left: 10%"
-            />
-          </div>
-          <div class="col" id="properText">
-            <p class="journeymap_title">Prototyping:</p>
-            <p class="p33">
-              We created 2 paper prototypes. One depicts a home interface that
-              routes to events. Another depicts a questionnaire designed to find
-              the best pet for the user's needs.
-            </p>
-          </div>
-        </div>
-
-        <!--User Testing-->
-        <div class="row subsection">
-          <div class="col" id="properText">
-            <p class="section_title">User Testing</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" id="properText">
-            <p class="p33">
-              We used our paper prototypes for user testing. Three classmates
-              ran through our paper prototypes with us. They based their
-              critique of our app on Nielsen's 10 Usability Heuristics. The
-              majority of feedback depicted the need for a back button. Users
-              preferred the Events-orientated app design over the questionnaire
-              app design. The questionnaire interrupted the flow of the app.
-            </p>
-          </div>
-          <div class="col">
-            <p class="p33">
-              With that in mind, we shifted our focus to connecting people,
-              similar to Facebook but targeted for pet ownership. Our goal was
-              to provide users with more guidance for finding and adopting a pet
-              to alleviate the complexities and uncertainties of navigating the
-              process, especially for first-time pet owners. So, we decided to
-              focus the app on making meetups and adoptions.
-            </p>
-          </div>
-        </div>
-
-        <div class="row subsection"></div>
-
-        <!--Wireframing-->
-        <div class="row lastsub">
-          <div class="col" id="properText">
-            <p class="journeymap_title">Wire-framing:</p>
-            <p class="p33" , style="padding-left: 5%">
-              Iterating on our paper prototypes, we were able to create two
-              wireframes to depict the search and results functionality.
-            </p>
-            <br />
-            <p class="p33" , style="padding-left: 5%">
-              Users can search for an event by name, location, event type, and
-              pet type. After hitting go users are brought to a results page
-              that shows all relevant events. The results page includes a
-              filtering feature for times.
-            </p>
-          </div>
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/wireframes.png"
-              style="width: 100%; padding-right: 20%; padding-top: 10%"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Turning models into a rough app
-        - Our greyscale model
-        - Our greyscale model after feedback-->
-
-      <div id="roughApp">
-        <div class="row section">
-          <div class="col">
-            <p class="section_title">Turning Models into an app</p>
-          </div>
-        </div>
-
-        <div class="row subsection">
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/firstIteration/firstIteration.png"
-              style="width: 100%"
-            />
-          </div>
-          <div class="col" id="properText">
-            <p class="journeymap_title">Our greyscale model:</p>
-            <p class="p33">
-              Our first round of coding. We used HTML and CSS to create this
-              first iteration. We used Bootstrap as our design framework. We
-              created JSON files to contain our events and began implementation
-              with JavaScipt to write events to the JSON file.
-            </p>
-          </div>
-        </div>
-
-        <div class="row lastsub">
-          <div class="col" id="properText">
-            <p class="journeymap_title">Our greyscale model after feedback:</p>
-            <p class="p33" , style="padding-left: 5%">
-              We added other pages of the app and switched to Handlebars from
-              HTML. We implemented a navigation bar to take users to any page on
-              the app. The "create new event" page allows users to post their
-              events. In addition, we implemented a login page that requires a
-              username and password to enter.
-            </p>
-          </div>
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/secondIteration/secondIteration.png"
-              style="width: 100%"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Turning a rough app into a polished product
-        - Adding color and aesthetics
-        - Final user testing
-        - Final touches
-        - Pitch and walkthrough video
-        - Future steps -->
-      <div id="polishedApp">
-        <div class="row section">
-          <div class="col" id="properText">
-            <p class="section_title">
-              Turning a rough app into a polished product
-            </p>
-          </div>
-        </div>
-        <div class="row subsection">
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/thirdIteration/iterationThree.png"
-              style="width: 100%"
-            />
-          </div>
-          <div class="col" id="properText">
-            <p class="journeymap_title">Adding color and aesthetics:</p>
-            <p class="p33">
-              We worked on adding color to the app and following an aesthetic
-              color scheme. We also implemented Facebook login functionality and
-              added a messaging function.
-            </p>
-          </div>
-        </div>
-        <div class="row subsection">
-          <div class="col">
-            <p class="journeymap_title">More user testing & Final touches:</p>
-            <p class="p33">
-              We completed the functionality of our create events page to link
-              to our profile and new results. We added images to events and
-              added deletions to our JSON. We finalized our messaging
-              functionality.
-            </p>
-          </div>
-        </div>
-        <div class="row subsection">
-          <div class="col">
-            <img
-              class="myimages"
-              src="images/WePet/finalIteration/finalIteration.png"
-              style="width: 100%"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" id="properText">
-            <p class="section_title">Going from here</p>
-            <p class="p33">
-              A matured version of this app could add a "stories" functionality
-              similar to Snapchat. We also wanted to implement a way to
-              encourage users to adopt from shelters.
-            </p>
-          </div>
-        </div>
-        <a href="index.html">
-          <p class="p33back"><mark>&#8592; back to main </mark></p>
-        </a>
+      <div>
+        <img src="images/WePet/WePet.png" alt="WePet app interface" class="case-img">
       </div>
     </div>
-  </body>
+
+    <!-- Background / Problem -->
+    <div class="case-section">
+      <p class="case-section-title">Research &amp; Background</p>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">The Problem</p>
+          <h2 class="case-h2">Finding community as a pet owner is harder than it should be</h2>
+          <p class="case-p">Conventional social apps like Facebook can feel overwhelming and off-topic for pet owners who just want to find local events, adoptions, or fellow animal lovers. How can we make that discovery effortless?</p>
+        </div>
+        <div>
+          <p class="case-label">Competitive Analysis</p>
+          <h2 class="case-h2">Understanding the landscape</h2>
+          <p class="case-p">We analyzed existing products that offer similar experiences to identify gaps and opportunities — what to build on, and where they fell short.</p>
+          <img src="images/WePet/RND/Competitive.png" alt="Competitive analysis chart" class="case-img" style="margin-top: 1rem;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Storyboarding & Prototyping -->
+    <div class="case-section">
+      <p class="case-section-title">Turning Ideas into Models</p>
+
+      <div class="two-col">
+        <div>
+          <img src="images/WePet/Prototypes/storyA.png" alt="Storyboard depicting app use" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">Storyboarding</p>
+          <h2 class="case-h2">Mapping user needs</h2>
+          <p class="case-p">We crafted storyboards to depict our target audience and how the app would satisfy their needs. These then fed directly into paper prototypes for early user testing.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Prototyping</p>
+          <h2 class="case-h2">Two paper prototypes</h2>
+          <p class="case-p">The first depicted a home interface routing to events. The second showed a personality questionnaire to match users with the right pet. Both were used for hands-on testing.</p>
+        </div>
+        <div>
+          <img src="images/WePet/Prototypes/home.png" alt="Paper prototype — home screen" class="case-img" style="margin-bottom: 1rem;">
+          <img src="images/WePet/RND/questions.png" alt="Paper prototype — questionnaire" class="case-img">
+        </div>
+      </div>
+
+      <div class="case-section" style="margin-bottom: 2rem;">
+        <p class="case-label">User Testing</p>
+        <h2 class="case-h2">Feedback from real users</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.75rem;">
+          <p class="case-p">Three classmates ran through both paper prototypes and evaluated them against Nielsen's 10 Usability Heuristics. The majority called out the need for a back button. Users preferred the events-oriented design over the questionnaire, which interrupted the flow of the app.</p>
+          <p class="case-p">Based on this feedback, we pivoted toward a Facebook-style community app focused on pet ownership — helping users find and attend local events, adoptions, and meetups, with a special focus on guiding first-time pet owners.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Wireframing</p>
+          <h2 class="case-h2">From paper to pixels</h2>
+          <p class="case-p">Iterating on our paper prototypes, we produced wireframes to define the search and results flow. Users can filter by event name, location, event type, and pet type, then browse results with time-based filtering.</p>
+        </div>
+        <div>
+          <img src="images/WePet/wireframes.png" alt="Wireframes for search and results" class="case-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Building the App -->
+    <div class="case-section">
+      <p class="case-section-title">Turning Models into an App</p>
+
+      <div class="two-col">
+        <div>
+          <img src="images/WePet/firstIteration/firstIteration.png" alt="First greyscale iteration" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">First Iteration</p>
+          <h2 class="case-h2">Greyscale build</h2>
+          <p class="case-p">Our first round of coding used HTML, CSS, and Bootstrap. We created JSON files to hold event data and began using JavaScript to write events to those files dynamically.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <p class="case-label">Second Iteration</p>
+          <h2 class="case-h2">Structure and navigation</h2>
+          <p class="case-p">We expanded to more app pages and switched from static HTML to Handlebars for templating. A navigation bar was implemented so users could move freely between pages. We also added a "create event" page and a login screen with username/password authentication.</p>
+        </div>
+        <div>
+          <img src="images/WePet/secondIteration/secondIteration.png" alt="Second iteration with navigation" class="case-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Polished Product -->
+    <div class="case-section">
+      <p class="case-section-title">Polishing the Product</p>
+
+      <div class="two-col">
+        <div>
+          <img src="images/WePet/thirdIteration/iterationThree.png" alt="Third iteration with color" class="case-img">
+        </div>
+        <div>
+          <p class="case-label">Third Iteration</p>
+          <h2 class="case-h2">Color, aesthetics &amp; social features</h2>
+          <p class="case-p">We applied a cohesive color scheme and refined the visual design. This iteration also saw the integration of Facebook login and a fully working messaging feature between users.</p>
+        </div>
+      </div>
+
+      <div class="case-section" style="margin-bottom: 2rem;">
+        <p class="case-label">Final Touches</p>
+        <h2 class="case-h2">Completing the loop</h2>
+        <p class="case-p">We connected the "create event" page to user profiles and live results. Images were added to events, JSON deletion was implemented, and messaging was finalized.</p>
+      </div>
+
+      <img src="images/WePet/finalIteration/finalIteration.png" alt="Final polished iteration of WePet" class="full-img">
+
+      <div>
+        <p class="case-label">Going from Here</p>
+        <h2 class="case-h2">Future directions</h2>
+        <p class="case-p">A matured version of WePet could add a "stories" feature similar to Snapchat. We also wanted to build in tools to actively encourage users to adopt from shelters over breeders.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Payam Sadeghian &mdash; Houston, TX</p>
+  </footer>
+
+</body>
 </html>

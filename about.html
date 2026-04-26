@@ -1,132 +1,84 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Payam Sadeghian — Systems &amp; Automation Engineer based in Houston, TX.">
+  <title>About — Payam Sadeghian</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<html>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Payam's Portfolio" />
-  <meta
-    name="”viewport”"
-    content="”width"
-    ="device-width,"
-    initial-scale="1.0″"
-  />
-
-  <head>
-    <title>About Page</title>
-    <link rel="icon" href="images/p.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="css/index.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
-    <div class="payamBlock">
-      <h1>
-        <b>Payam Sadeghian</b> &nbsp; &nbsp;<a
-          href="https://www.linkedin.com/in/payam-sadeghian-291a47193/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa fa-linkedin" style="color: black"></i
-        ></a>
-        &nbsp;
-        <a
-          href="https://github.com/payamsade"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa fa-github" style="color: black"></i
-        ></a>
-        &nbsp;
-        <a
-          href="https://twitter.com/payamsadeghian"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fa fa-twitter" style="color: black"></i
-        ></a>
-      </h1>
-      <br />
-      <h4>Software Developer &middot; System Integration Engineer</h4>
-    </div>
-
-    <!-- The navigation menu -->
-    <div class="navigationbar">
-      <ul>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Payam Sadeghian</a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-
-        <li>
-          <a href="index.html#projects">Projects</a>
-          <!--
-    <div class="sub-menu-Projects">
-      <ul>
-        <li><a href="WePet.html">WePet</a></li>
-        <li><a href="TreeSkirt.html">TreeSkirt</a></li>
-      </ul>
-    </div> -->
+        <li class="has-dropdown">
+          <a href="#">Projects</a>
+          <div class="nav-dropdown">
+            <a href="WePet.html" class="drop-card">
+              <img src="images/WePet/WePetBanner.png" alt="WePet app design">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">UX &middot; Case Study</span>
+                <span class="drop-card-title">WePet — App Design</span>
+              </div>
+            </a>
+            <a href="https://github.com/payamsade/Portugal-Greatest-Distance" target="_blank" rel="noopener noreferrer" class="drop-card">
+              <img src="images/Portugal-Greatest-Distance/portugal-with-line.png" alt="Portugal Max Distance">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">Python &middot; Algorithm</span>
+                <span class="drop-card-title">Portugal Max Distance</span>
+              </div>
+            </a>
+            <a href="TreeSkirt.html" class="drop-card">
+              <img src="images/TreeSkirt/award.jpeg" alt="UCSD Sustain-A-Thon">
+              <div class="drop-card-body">
+                <span class="drop-card-tag">Hardware &middot; Award</span>
+                <span class="drop-card-title">UCSD Sustain-A-Thon — 1st Place</span>
+              </div>
+            </a>
+          </div>
         </li>
-
-        <li>
-          <a href="Resume.pdf" target="_blank" rel="noopener noreferrer"
-            >Resume</a
-          >
-        </li>
-        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="about.html" class="active">About</a></li>
       </ul>
     </div>
+  </nav>
 
-    <div class="AboutMePic">
-      <div class="row">
-        <div class="col">
-          <img
-            src="images/PayamAbout.jpeg"
-            alt="Boulder"
-            title="AboutMe"
-            style="box-shadow: 10px 10px"
-            class="allign-center medium"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="bio" style="padding-top: 1%">
-      <div class="row">
-        <div class="col">
-          <br />
-          <p class="p33about">
-            I am a second-generation Iranian-American, born in Providence, RI. I
-            grew up in San Diego and Dallas, TX. I was inspired by the potential
-            of technology and pursued my studies in cognitive science and
-            computer science at UC San Diego. Currently, I work as a software
-            engineer in San Diego. In my leisure time, I enjoy reading
-            literature and manga, lifting, cooking, and playing chess.
-          </p>
-        </div>
-      </div>
-    </div>
-    <a href="index.html">
-      <p class="p33back"><mark>&#8592; back to main </mark></p>
+  <main>
+    <a href="index.html" class="back-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to home
     </a>
-  </body>
+
+    <div class="about-grid">
+      <img src="images/IMG_8758.jpeg" alt="Payam Sadeghian" class="about-photo">
+      <div>
+        <h1 class="about-h1">About Me</h1>
+        <p class="about-text">
+          I am a second-generation Iranian-American, born in Providence, RI. I grew up in San Diego and Dallas, TX, and was inspired early by the potential of technology to change lives.
+        </p>
+        <p class="about-text">
+          I pursued studies in cognitive science and computer science at UC San Diego, where my interests in machine learning, human-computer interaction, and design came together. My goal has always been to build technology that saves lives or meaningfully improves them.
+        </p>
+        <p class="about-text">
+          Currently, I work as a Systems & Automation Engineer in Houston, TX. Outside of work I enjoy reading literature and manga, Brazilian Jiu Jitsu, cooking, and playing chess.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Payam Sadeghian &mdash; Houston, TX</p>
+  </footer>
+
+</body>
 </html>
