@@ -132,6 +132,14 @@ nav {
   object-fit: cover;
   display: block;
 }
+.drop-card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+.drop-card-thumb--steel {
+  background: linear-gradient(135deg, #111827 0%, #1e3a5f 60%, #1a4a7a 100%);
+}
 .drop-card-body {
   padding: 0.5rem 0.625rem 0.625rem;
   text-align: center;
@@ -155,9 +163,8 @@ nav {
 
 /* ===== HERO ===== */
 .hero {
-  background: var(--accent-light);
-  border-bottom: 1px solid var(--accent-border);
-  padding: 4rem 1.5rem;
+  background: var(--nav-bg);
+  padding: 5rem 1.5rem 4.5rem;
 }
 .hero-inner {
   max-width: var(--max-w);
@@ -188,23 +195,25 @@ nav {
   box-shadow: 0 4px 24px rgba(0,0,0,0.15);
 }
 .hero-name {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 700;
-  letter-spacing: -0.035em;
-  line-height: 1.1;
-  margin-bottom: 0.4rem;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 .hero-title {
   font-size: 1.0625rem;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 1.25rem;
 }
 .hero-bio {
   font-size: 1rem;
-  line-height: 1.7;
-  color: var(--text-body);
-  margin-bottom: 1.5rem;
-  max-width: 500px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.68);
+  margin-bottom: 1.75rem;
+  max-width: 480px;
 }
 .hero-links {
   display: flex;
@@ -328,12 +337,59 @@ main {
 
 /* ===== SKILLS ===== */
 .skills-line {
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   color: var(--text-muted);
-  text-align: center;
   line-height: 2;
   letter-spacing: 0.01em;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.25rem;
 }
+
+/* ===== HERO ENTRANCE ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-name  { animation: fadeUp 0.5s ease both 0.05s; }
+.hero-title { animation: fadeUp 0.5s ease both 0.15s; }
+.hero-bio   { animation: fadeUp 0.5s ease both 0.25s; }
+.hero-links { animation: fadeUp 0.5s ease both 0.35s; }
+
+/* ===== CONTACT CTA ===== */
+.contact-section {
+  background: var(--nav-bg);
+  border-radius: var(--radius);
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+.contact-heading {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+.contact-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  max-width: 480px;
+  margin: 0 auto 1.75rem;
+  line-height: 1.7;
+}
+.contact-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.contact-btn:hover { opacity: 0.85; }
 
 /* ===== FOOTER ===== */
 footer {
@@ -373,9 +429,10 @@ footer {
   box-shadow: var(--shadow);
 }
 .about-h1 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   margin-bottom: 1.25rem;
 }
 .about-text {
@@ -388,9 +445,8 @@ footer {
 
 /* ===== CASE STUDY ===== */
 .case-hero {
-  background: var(--accent-light);
-  border-bottom: 1px solid var(--accent-border);
-  padding: 3.5rem 1.5rem;
+  background: var(--nav-bg);
+  padding: 4rem 1.5rem 3.5rem;
 }
 .case-hero-inner { max-width: var(--max-w); margin: 0 auto; }
 .case-hero-tag {
@@ -402,15 +458,17 @@ footer {
   margin-bottom: 0.75rem;
 }
 .case-hero h1 {
-  font-size: clamp(1.5rem, 4vw, 2.125rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
   margin-bottom: 0.75rem;
+  color: #fff;
 }
 .case-hero p {
   font-size: 1.0625rem;
-  color: var(--text-body);
+  color: rgba(255,255,255,0.65);
   max-width: 560px;
   line-height: 1.65;
 }
