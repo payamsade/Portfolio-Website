@@ -78,8 +78,18 @@
   </main>
 
   <footer>
-    <p>Payam Sadeghian &mdash; Houston, TX</p>
+    <p>Payam Sadeghian &mdash; Houston, TX &middot; <button class="snake-trigger" id="snakeTrigger">🐍</button></p>
   </footer>
+
+  <!-- Snake Game Overlay -->
+  <div class="snake-overlay" id="snakeOverlay" role="dialog" aria-label="Snake game">
+    <span class="snake-overlay-name">Payam Sadeghian</span>
+    <button class="snake-close" id="snakeClose" aria-label="Close game">&times;</button>
+    <p class="snake-score" id="snakeScore">SCORE: 0</p>
+    <canvas class="snake-canvas" id="snakeCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <script src="snake.js"></script>
 
 </body>
 </html>
